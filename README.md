@@ -70,17 +70,11 @@ ___
 8. 这是一个简单、常用的使用案例。有关其他功能或使用情形，请仔细阅读以下部分并按照说明操作。
 
 ## 2. Install (安装)
-### pip install
-```bash 
-pip install easyliter
-or
-pip3 install easyliter
-```
 
 ### install from source（to get the up-to-date version）
 ```bash
-git clone https://github.com/Psycoy/EasyLiterature.git
-cd EasyLiterature
+git clone https://github.com/Mat-Design-Yu/EasyLiterature_for_yu.git
+cd EasyLiterature_for_yu
 pip install -e .
 ```
 

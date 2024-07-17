@@ -48,11 +48,12 @@ def get_bib_and_pdf(note_file, output_path, proxy, paper_recognizer, gproxy_mode
     if not os.path.exists(pdfs_path):
         os.makedirs(pdfs_path)
     
-    with open(note_file, 'r') as f:
-        content = f.read()
-            
+    with open(note_file,encoding='utf-8', mode ='r') as f:
+        content=f.read()    
+    
     m = paper_recognizer.findall(content)
-    logger.info("Number of files to download -  {}".format(len(m)))
+    
+    logger.info("Number of files to download - {}".format(len(m)))
 
     if not m:
         logger.info("The file {} is not found, or there is no valid entry in the file.".format(note_file))
